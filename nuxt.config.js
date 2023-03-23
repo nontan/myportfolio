@@ -13,7 +13,7 @@ export default {
 
     title: 'ポートフォリオサイト',
     htmlAttrs: {
-      lang: 'en'
+    lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
@@ -25,20 +25,21 @@ export default {
 { hid: 'og:type', property: 'og:type', content: 'website' },
 { hid: 'og:title', property: 'og:title', content: 'ポートフォリオサイト' },
 { hid: 'og:description', property: 'og:description', content: 'ポートフォリオサイトです' },
-//{ hid: 'og:url', property: 'og:url', content: 'https://example.com' },
-//{ hid: 'og:image', property: 'og:image', content: 'https://example.com/your-image-path.jpg' },
+{ hid: 'og:url', property: 'og:url', content: 'https://nontan.github.io/myportfolio/' },
+//{ hid: 'og:image', property: 'og:image', content: '/OGP.png' },
 
 // Twitter Card
 { hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
 { hid: 'twitter:title', name: 'twitter:title', content: 'ポートフォリオサイト' },
 { hid: 'twitter:description', name: 'twitter:description', content: 'ポートフォリオサイトです' },
-//{ hid: 'twitter:image', name: 'twitter:image', content: 'https://example.com/your-image-path.jpg' },
+{ hid: 'twitter:image', name: 'twitter:image', content: '/OGP.png' },
 ],
 
 //メニュー部分
 link: [
   { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
   { rel:'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap', },
+  { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
       ],
 
 //Google Analytics
