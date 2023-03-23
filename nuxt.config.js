@@ -26,7 +26,7 @@ export default {
 { hid: 'og:title', property: 'og:title', content: 'ポートフォリオサイト' },
 { hid: 'og:description', property: 'og:description', content: 'ポートフォリオサイトです' },
 { hid: 'og:url', property: 'og:url', content: 'https://nontan.github.io/myportfolio/' },
-//{ hid: 'og:image', property: 'og:image', content: '/OGP.png' },
+{ hid: 'og:image', property: 'og:image', content: '/OGP.png' },
 
 // Twitter Card
 { hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
