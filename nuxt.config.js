@@ -10,6 +10,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
+
     title: 'ポートフォリオサイト',
     htmlAttrs: {
       lang: 'en'
@@ -19,7 +20,6 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
-
 
 // OGP
 { hid: 'og:type', property: 'og:type', content: 'website' },
@@ -35,14 +35,31 @@ export default {
 //{ hid: 'twitter:image', name: 'twitter:image', content: 'https://example.com/your-image-path.jpg' },
 ],
 
-
-
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel:'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap', },
+//メニュー部分
+link: [
+  { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+  { rel:'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap', },
       ],
 
+//Google Analytics
+      script: [
+        {
+          src: 'https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID',
+          async: true,
+        },
+        {
+          hid: 'gtag-init',
+          innerHTML: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'YOUR_TRACKING_ID');
+          `,
+        },
+      ],
+      __dangerouslyDisableSanitizers: ['script'],
 
+//Google Analytics部分終わり
 
   },
 
