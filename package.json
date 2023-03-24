@@ -4,10 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
-    "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate",
+    "build": "nuxt build",
     "generate": "nuxt generate",
-    "deploy": "npm run generate && gh-pages -d dist"
+    "deploy": "npm run generate -d docs"
   },
 
 
