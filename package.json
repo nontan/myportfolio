@@ -4,11 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
+    "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
+    "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate",
     "generate": "nuxt generate",
     "deploy": "npm run generate && gh-pages -d dist"
   },
+
+
   "dependencies": {
     "core-js": "^3.25.3",
     "nuxt": "^2.15.8",
