@@ -1,4 +1,8 @@
 export default {
+  generate: {
+    dir: 'docs'
+  },
+
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
@@ -45,7 +49,7 @@ link: [
 //Google Analytics
       script: [
         {
-          src: 'https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID',
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-FF6Q9LLK34',
           async: true,
         },
         {
@@ -54,7 +58,7 @@ link: [
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'YOUR_TRACKING_ID');
+            gtag('config', 'G-FF6Q9LLK34');
           `,
         },
       ],

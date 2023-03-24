@@ -9,6 +9,8 @@
     "generate": "nuxt generate",
     "deploy": "npm run generate && gh-pages -d dist"
   },
+
+
   "dependencies": {
     "core-js": "^3.25.3",
     "nuxt": "^2.16.3",
